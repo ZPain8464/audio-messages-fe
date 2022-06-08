@@ -14,8 +14,7 @@ const demoUsers = {
     }
 }
 
-const url = `http://localhost:3001/getToken`
-const mp3Url = `http://localhost:3001/getMp3`
+const url = `http://localhost:3001/getToken`;
 
 
-export { demoUsers, url, mp3Url };
+export { demoUsers, url };
