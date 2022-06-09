@@ -78,6 +78,7 @@ export const CustomInput = () => {
                 if(audioRef.current){
                     audioRef.current.pause();
                     audioRef.current.load();
+                    audioRef.current.currentTime()
                 }
             }
             setRecorder(recorder);
@@ -118,6 +119,7 @@ export const CustomInput = () => {
                         <button className="close_audio_button" onClick={closeAudioUI}>X</button>
                         {audioSignedUrl && (
                         <button
+                            className="send_button"
                             onClick={sendAudioAttachment}
                         >
                             Send

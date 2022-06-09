@@ -141,3 +141,13 @@ px
   background: none !important;
 }
 
+.send_button {
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background: #3a86ff;
+}
