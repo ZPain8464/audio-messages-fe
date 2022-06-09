@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import micIcon from "./assets/mic-icon.png";
-import stopIcon from "./assets/stop-button.png";
+import stopIcon from "./assets/stop-recording.png";
 import { SendButton, ChatAutoComplete, FileUploadIconFlat, useChannelStateContext } from "stream-chat-react";
 import { FileUploadButton, ImageDropzone } from "react-file-utils";
 import TextareaAutosize from 'react-textarea-autosize';
@@ -78,7 +78,6 @@ export const CustomInput = () => {
                 if(audioRef.current){
                     audioRef.current.pause();
                     audioRef.current.load();
-                    audioRef.current.currentTime()
                 }
             }
             setRecorder(recorder);
